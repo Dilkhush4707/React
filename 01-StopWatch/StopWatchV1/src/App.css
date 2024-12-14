@@ -1,0 +1,19 @@
+.app-container{
+   height: 400px;
+   width: 400px;
+   border: 2px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.time-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-size: large;
+}
