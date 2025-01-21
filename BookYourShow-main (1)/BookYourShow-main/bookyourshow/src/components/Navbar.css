@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
+}
+
+.fnav {
+ 
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between; /* Changed to space-between for better responsiveness */
+  background-color: rgb(28, 28, 51);
+  color: white;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.fnav .left img {
+  width: 300px; /* Set a fixed width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.fnav .left {
+   overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the left section to grow */
+  height: 8vh;
+}
+
+.inp {
+  margin-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 600px; /* Set a max-width for better responsiveness */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.inp #icon {
+  color: black;
+  font-size: 20px;
+  margin: 12px 5px;
+}
+
+.left input {
+  padding:5px;
+  width: 90%;
+  background: none;
+   font-size: 18px;
+  border: none;
+
+}
+
+.fnav .right {
+  display: flex;
+  align-items: center;
+  margin-top: 11px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.right .btnsignin {
+  width: 16vh;
+  
+  height: 5vh;
+   font-size: 18px;
+  background-color: #fc3a5b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-inline: 10px;
+}
+
+.right i  {
+  font-size: 15px;
+  margin-inline: 10px;
+}
+.navbar-location{
+  text-align: center;
+  width: 16vh;
+  height: 4vh;
+  padding: 5px;
+    border-radius: 5px;
+   background-color: #fc3a5b;
+  cursor: pointer;
+  margin-inline: 20px;
+  font-size: 20px;
+}
+
+.sec-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 11px;
+  background-color: rgb(28, 28, 51);
+  color: white;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.sec-nav p:hover {
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(252, 87, 114);
+}
+
+.s-left, .s-right {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.s-left a, .s-right a {
+  color: white;
+  margin-inline: 15px;
+}
+
+.s-left a:hover, .s-right a:hover {
+  color: rgb(252, 87, 114);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 869px) {
+  .fnav {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fnav img {
+    width: 280px;
+    /* margin-bottom: 15px; */
+  }
+
+  .inp {
+    height: 80%;
+    width: 100%;
+    /* margin-bottom: 15px; */
+  }
+
+  .right {
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .sec-nav {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .right i, .right p {
+    font-size: 18px;
+  }
+
+  .right button {
+    width: 70px;
+    height: 25px;
+  }
+
+  .fnav img {
+    width: 250px;
+  }
+}
+

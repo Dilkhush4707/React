@@ -1,0 +1,120 @@
+.popup-overlay1{
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content1 {
+ 
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  
+  max-width: 900px;
+  height: fit-content;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 15px;
+  height: 5vh;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.detect-location {
+ color: #e73e49;
+ background-color: #ffffffc0;
+
+  padding: 12px;
+  font-size: 20px;
+  margin-inline: 5vh;
+  border-color: #e73e49;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}
+.detect-location:hover{
+    background-color: #e73e49;
+    color: white;
+}
+
+.popular-cities, .other-cities {
+    color: black;
+  margin-bottom: 20px;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    
+}
+.city-icons {
+    position: relative;
+
+   color: rgb(102, 102, 102);
+    font-size: 14px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  flex-wrap: wrap;
+}
+
+.city-icons div {
+
+    color: black;
+    align-items: center;
+  width: 15%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.city-list{
+ color: rgb(102, 102, 102);
+ cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.city-list div{
+        width: 12%;
+  padding: 10px;
+}
+
+.hide-cities {
+  background-color: transparent;
+  color: #e73e49;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.toggle-cities {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+.toggle-cities:hover {
+  text-decoration: underline;
+}
+
+.hide-cities:hover {
+  text-decoration: underline;
+}
+

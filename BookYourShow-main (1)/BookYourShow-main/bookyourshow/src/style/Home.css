@@ -1,0 +1,178 @@
+.slider-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%; /* Adjust based on your needs */
+}
+
+.slider-container img {
+  width: 100%;
+  height: 50vh;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.up {
+ display: flex;
+  padding: 0px 8vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.container p {
+  color: rgb(220, 53, 88);
+  font-weight: 500;
+ padding: 10px 10vh;
+  cursor: pointer;
+}
+
+.container {
+  padding: 5vh 10vh;
+}
+
+.container h2 {
+  font-size: 24px;
+  padding-left: 8vh;
+  padding-bottom: 5px;
+  font-weight: 900;
+  color: #333333;
+}
+
+.container .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.card-body{
+  display: flex;
+
+
+text-align: center;
+  flex-direction: column;
+}
+.card-body h4{
+  padding-top: 6px;
+   
+}
+.card-body p{
+  color:#666666;
+
+}
+.card img {
+  width: 200px;
+  margin-inline: 20px;
+  border-radius: 10px;
+}
+.card img:hover {
+  /* styles to apply on hover */
+  background-color: #f7f7f7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+.premiere {
+  background-color: rgb(43, 49, 72);
+  margin-top: 40px;
+  padding: 1vh 10vh;
+  color: white;
+  align-items: start;
+}
+
+.premiere h2 {
+  padding: 1vh 10vh;
+  font-weight: 900;
+}
+
+.containers .up p {
+  color: rgb(197, 72, 72);
+  cursor: pointer;
+ text-align:right;
+}
+
+.premiere p {
+  padding: 1vh 18vh;
+}
+
+.premiere .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .container, .premiere {
+    padding: 5vh 5vh;
+  }
+
+  .container h2, .premiere h2 {
+    padding-left: 5vh;
+  }
+
+  .container p {
+    padding-right: 5vh;
+  }
+
+  .premiere p {
+    padding: 1vh 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .up {
+    padding: 0 5vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, .premiere {
+    padding: 3vh 3vh;
+  }
+
+  .container h2, .premiere h2 {
+    padding-left: 3vh;
+  }
+
+  .container p {
+    padding-right: 3vh;
+  }
+
+  .premiere p {
+    padding: 1vh 5vh;
+  }
+
+  .card img {
+    width: 30%;
+    margin-inline: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .premiere {
+    padding: 2vh 2vh;
+  }
+
+  .container h2, .premiere h2 {
+    padding-left: 2vh;
+  }
+
+  .container p {
+    padding-right: 2vh;
+  }
+
+  .premiere p {
+    padding: 1vh 2vh;
+  }
+
+  .card img {
+    width: 45%;
+    margin-inline: 5px;
+  }
+}

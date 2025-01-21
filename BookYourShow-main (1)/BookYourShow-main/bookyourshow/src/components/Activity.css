@@ -1,0 +1,68 @@
+/* src/App.css */
+
+.activity-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh;
+}
+
+.activities-section {
+  flex: 4;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.activities-section h2{
+     font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tags {
+display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tags button {
+   padding: 10px;
+  font-size: 16px;
+  color: #dc3558;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tags button:hover{
+     background-color: #b30000;
+  color: #fff;
+}
+
+.activities-list {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.activity-card {
+  width: calc(21% - 1px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card img {
+  width: 100%;
+  height: 290px;
+ 
+}
+
+.activity-info {
+  padding: 15px;
+}
+
+

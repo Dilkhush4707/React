@@ -1,0 +1,11 @@
+{
+  "name": "bookyourshow",
+  "version": "1.0.0",
+  "description": "Here you can book tickets for movie and other shows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

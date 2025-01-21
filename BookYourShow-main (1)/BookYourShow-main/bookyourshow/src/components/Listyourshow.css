@@ -1,0 +1,180 @@
+.event-page {
+  font-family: Arial, sans-serif;
+  max-width: 917px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.host-section, .services-section {
+  padding: 0vh 10vh;
+  margin-bottom: 50px;
+}
+
+.host-section h2, .services-section h2 {
+  color: rgb(31, 37, 58);
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.host-section p, .services-section p {
+  color: rgb(31, 37, 58);
+  padding: 0px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+}
+
+.optt1, .optt2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.host-options, .service-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.host-option, .service-option {
+  margin: 16px;
+ width: calc(33.3333% - 32px); /* 3 cards per row */
+  padding: 32px 10px;
+  background: rgb(236, 245, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.host-option:hover, .service-option:hover {
+  transform: translateY(-5px);
+}
+
+.host-option img, .service-option img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.list-show-button {
+  background-color: #f05a28;
+  color: #fff;
+  width: 30vh;
+  height: 8vh;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.list-show-button:hover {
+  background-color: #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .event-page {
+    padding: 0 5vh;
+    margin: 60px auto;
+  }
+
+  .host-option, .service-option {
+    width: calc(45% - 32px); /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-page {
+    padding: 0 5vh;
+    margin: 60px auto;
+  }
+
+  .host-section, .services-section {
+    padding: 0vh 5vh;
+  }
+
+  .host-option, .service-option {
+    width: calc(45% - 32px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .event-page {
+    padding: 0 2vh;
+    margin: 40px auto;
+  }
+
+  .host-section, .services-section {
+    padding: 0vh 3vh;
+    margin-bottom: 30px;
+  }
+
+  .host-section h2, .services-section h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .host-section p, .services-section p {
+    padding: 0px 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+ 
+
+  .host-option, .service-option {
+    width: calc(45% - 32px); /* 2 cards per row */
+  }
+
+  .list-show-button {
+    width: 25vh;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 572px) {
+  .event-page {
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+
+  .host-section, .services-section {
+    padding: 0vh 2vh;
+    margin-bottom: 20px;
+  }
+
+  .host-section h2, .services-section h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .host-section p, .services-section p {
+    padding: 0px 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .optt1, .optt2 {
+    padding:0px 20px;
+    flex-direction: column;
+  }
+
+  .host-option, .service-option {
+    width: 100%; /* 1 card per row */
+    margin: 8px 0;
+  }
+
+  .list-show-button {
+    width: 100%;
+    height: 6vh;
+  }
+}
