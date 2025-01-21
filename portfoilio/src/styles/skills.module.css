@@ -1,0 +1,58 @@
+.skills{
+
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 600px;
+}
+.heading{
+  font-size: 2rem;
+  margin: 20px;
+
+}
+.images{
+  width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.skillimg{
+  margin-left: 10%;
+  margin-right: 10%;
+
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ flex-direction: row;
+ width: 80%;
+ height: 300px;
+ 
+}
+.skillsName{
+  margin-left: 10%;
+  margin-right: 10%;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ flex-direction: row;
+ width: 80%;
+ height: 300px;
+ 
+}
+.skill{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(131,58,180);
+background: linear-gradient(131deg, rgba(131,58,180,1) 0%, rgba(161,51,143,1) 26%, rgba(187,45,111,1) 39%, rgba(253,29,29,1) 53%, rgba(253,50,35,1) 61%, rgba(253,71,41,1) 67%, rgba(253,94,47,1) 69%, rgba(253,147,61,1) 77%, rgba(253,123,55,1) 82%, rgba(253,132,57,1) 85%, rgba(252,176,69,1) 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}

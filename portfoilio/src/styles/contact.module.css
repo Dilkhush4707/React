@@ -1,0 +1,54 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  
+}
+.heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contactContainer{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60% ;
+    height: 400px;
+    margin-top: 2rem;
+}
+.contactme{
+  
+  border: 2px solid black;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.messagebox{
+  margin:10px;
+  border: 2px solid black;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+.question {
+  font-weight: 700;
+  font-size: 25px;
+}
+.input{
+ width: 300px;
+ height: 40px;
+}
+
