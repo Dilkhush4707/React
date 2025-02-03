@@ -8,16 +8,28 @@ import About from "./components/about/about.jsx";
 import Projects from "./components/projects/project.jsx";
 import Skills from "./components/skills/skills.jsx";
 import Contact from './components/contact/contact.jsx'
+import RubiksCube from "./components/threejs/animation.jsx";
 
 function App() {
   return (
     <>
+    {/* <RubiksCube /> */}
       <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </>
   );

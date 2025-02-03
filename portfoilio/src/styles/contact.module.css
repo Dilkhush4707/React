@@ -1,28 +1,28 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-  
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  animation: fadeIn 2s ease-in;
 }
-.heading{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-.contactContainer{
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:60% ;
-    height: 400px;
-    margin-top: 2rem;
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 400px;
+  margin-top: 2rem;
 }
-.contactme{
-  
-  border: 2px solid black;
+
+.contactme {
   width: 400px;
   height: 300px;
   display: flex;
@@ -31,24 +31,97 @@
   justify-content: center;
   margin-top: 2rem;
 }
-.messagebox{
-  margin:10px;
-  border: 2px solid black;
+
+.messagebox {
+  margin: 10px;
   width: 400px;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
   gap: 10px;
+  background-color: var(--messagebox-bg, #f0f0f0); /* Default light theme */
+  border: 1px solid var(--messagebox-border, #ccc); /* Default light theme */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
-.question {
-  font-weight: 700;
-  font-size: 25px;
+
+.input {
+  width: 400px;
+  height: 40px;
+  padding: 0.5rem;
+  border: 1px solid var(--input-border, #ccc); /* Default light theme */
+  background-color: var(--input-bg, #fff); /* Default light theme */
+  color: var(--input-color, #000); /* Default light theme */
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s, border 0.3s;
 }
-.input{
- width: 300px;
- height: 40px;
+
+.input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-color: var(--input-focus-border, #007bff); /* Default light theme */
+}
+.input:hover {
+  border-color: var(--input-focus-border, #007bff); /* Default light theme */
+}
+
+
+@media (max-width: 1024px) {
+  .contactContainer {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .contactme, .messagebox {
+    
+    width: 90%;
+    height: auto;
+  }
+
+  .input {
+    background-color: whitesmoke;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .contactme, .messagebox {
+    width: 90%;
+    height: auto;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dark theme variables */
+body.dark-theme {
+  --messagebox-bg: #333;
+  --messagebox-border: #555;
+  --input-bg: #444;
+  --input-border: #666;
+  --input-color: #fff;
+  --input-focus-border: #61dafb;
 }
 

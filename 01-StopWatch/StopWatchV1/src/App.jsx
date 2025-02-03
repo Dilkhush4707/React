@@ -23,6 +23,7 @@ function App() {
   return (
     <><div className="app-container">
       <h4> Stop Watch <CiClock2 /></h4>
+      
       <div className="main-container">
       <div className="time-container">
         <span>{( Math.floor((time / 60000) % 60))}:</span>
