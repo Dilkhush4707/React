@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+  --accent: #f0f9ff;
+  --accent-foreground: #0369a1;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #3b82f6;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card: #1a1a1a;
+  --card-foreground: #fafafa;
+  --primary: #4f86f7;
+  --primary-foreground: #ffffff;
+  --secondary: #222222;
+  --secondary-foreground: #fafafa;
+  --accent: #1a344f;
+  --accent-foreground: #7dd3fc;
+  --border: #333333;
+  --input: #222222;
+  --ring: #5e9ef4;
+  --muted: #222222;
+  --muted-foreground: #a1a1aa;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    var(--secondary) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  background-position: 0 0;
+}
+
+.dark body {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  background-position: 0 0;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}

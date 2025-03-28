@@ -1,0 +1,18 @@
+RESUME INSTRUCTIONS
+
+To make the floating resume download button work properly:
+
+1. Create your resume as a PDF file
+2. Name it "resume.pdf"
+3. Place it in this public folder (portfolio/public/)
+
+The button is configured to download this file when clicked. If you prefer a different filename, you can modify the FloatingButton.tsx component and update the href and download attributes.
+
+Example:
+```jsx
+<motion.a
+  href="/your-custom-filename.pdf" 
+  download="Dilkhush_Jangid_Resume.pdf"
+  // ... other props
+>
+``` 
